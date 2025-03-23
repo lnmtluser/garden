@@ -28,4 +28,14 @@ const maximumSumOfSubarrayOfSizeK = (arr, k) => {
 }
 ```
 
-test
+<!-- prettier-ignore-start -->
+> [!note]
+> The brute force approach is to find all subarrays of size k and sum them up, while tracking the maximum sum so far, returning max sum at the end<br><br>
+> Iterate from i = 0 to arr.length - k<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Iterate from j = i to j < i + k<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sum up each element<br>
+> Update max<br>
+> Return max<br><br>
+> O(n\*n) time<br>
+> O(1) space<br><br>
+<!-- prettier-ignore-end -->
