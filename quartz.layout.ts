@@ -31,9 +31,9 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.Explorer({
       title: "Explorer", // Title of the explorer component
-      folderClickBehavior: "collapse", // Click behavior ("link" or "collapse")
+      folderClickBehavior: "link", // Click behavior ("link" or "collapse")
       folderDefaultState: "collapsed", // Initial state of folders
-      useSavedState: true, // Persist state in localStorage
+      useSavedState: false, // Persist state in localStorage
     }),
   ],
   right: [
