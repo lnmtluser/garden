@@ -6,12 +6,7 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   afterBody: [],
-  footer: Component.Footer({
-    links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
-    },
-  }),
+  footer: Component.Footer(),
 }
 
 // components for pages that display a single page (e.g. a single note)
@@ -34,7 +29,12 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      title: "Explorer", // Title of the explorer component
+      folderClickBehavior: "collapse", // Click behavior ("link" or "collapse")
+      folderDefaultState: "collapsed", // Initial state of folders
+      useSavedState: true, // Persist state in localStorage
+    }),
   ],
   right: [
     Component.Graph(),
