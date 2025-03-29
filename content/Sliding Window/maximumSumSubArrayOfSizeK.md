@@ -72,7 +72,7 @@ const maximumSumOfSubarrayOfSizeK = (arr, k) => {
 >    iteration 2:<br>
 >    if (1 >=3) -> no<br>
 >    current sum: 2+1 = 3<br><br>
->    iteration 3:<br><br>
+>    iteration 3:<br>
 >    if (2 >= 3) -> no<br>
 >    current sum: 2+1+5 = 8<br><br>
 >    iteration 4:<br>
