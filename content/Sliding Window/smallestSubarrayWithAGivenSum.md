@@ -86,5 +86,3 @@ const smallestLengthOfSubarrayWhoseSumIsGreaterThanOrEqualToTarget_optimal = (ar
   return smallestLength === Number.MAX_VALUE ? 0 : smallestLength
 }
 ```
-
-test
