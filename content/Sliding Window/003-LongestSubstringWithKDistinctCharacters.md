@@ -1,5 +1,6 @@
 ---
 title: Longest Substring With K Distinct Characters
+priority: 1
 ---
 
 > [!example]
@@ -17,3 +18,18 @@ title: Longest Substring With K Distinct Characters
 > Update the longest substring length<br>
 > Return the longest substring length<br><br>
 > O(n) time , O(n) space
+
+The brute force approach is to look for all longest subarray that contains no more than k distinct characters
+We will be using a hashmap to store each occurrence of characters found so far while iterating through the array
+
+<!-- prettier-ignore-start -->
+> [!note]
+Iterate from i = 0 to n - 1
+    Iterate from j = i to n - 1
+        While iterating, store each occurrence of characters found so far in a hashmap
+        If at any point, the size of the map is > k, then reset the map for next iteration, and break to go to next ith iteration
+        Update the longest substring seen so far
+Return the maximum subarray length
+
+O(n*n) time, O(n) space
+<!-- prettier-ignore-end -->
