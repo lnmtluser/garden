@@ -1,0 +1,49 @@
+---
+Title: Questions
+---
+
+> [!example]
+> Maximum Sum Subarray of Size K<br><br>
+> Given an array of positive numbers and a positive number ‘k’, find the maximum sum of any contiguous subarray of size ‘k’.<br><br>
+> Example 1:<br>
+> Input: [2, 1, 5, 1, 3, 2], k=3<br>
+> Output: 9<br>
+> Explanation: Subarray with maximum sum is [5, 1, 3].<br><br>
+> Example 2:<br>
+> Input: [2, 3, 4, 1, 5], k=2<br>
+> Output: 7<br>
+> Explanation: Subarray with maximum sum is [3, 4].<br>
+
+> [!example]
+> Smallest Subarray with a given sum<br><br>
+> Given an array of positive numbers and a positive number ‘S’, find the length of the smallest contiguous subarray whose sum is greater than or equal
+> to ‘S’<br>
+> Return 0, if no such subarray exists<br><br>
+> Example 1:<br>
+> Input: [2, 1, 5, 2, 3, 2], S=7<br>
+> Output: 2<br>
+> Explanation: The smallest subarray with a sum great than or equal to '7' is [5, 2]<br><br>
+> Example 2:<br>
+> Input: [2, 1, 5, 2, 8], S=7<br>
+> Output: 1<br>
+> Explanation: The smallest subarray with a sum greater than or equal to '7' is [8]<br><br>
+> Example 3:<br>
+> Input: [3, 4, 1, 1, 6], S=8<br>
+> Output: 3<br>
+> Explanation: Smallest subarrays with a sum greater than or equal to '8' are [3, 4, 1] or [1, 1, 6]<br>
+
+> [!example]
+> Given a string, find the length of the longest substring in it with no more than K
+> distinct characters.<br><br>
+> Example 1:<br>
+> Input: String="araaci", K=2<br>
+> Output: 4<br>
+> Explanation: The longest substring with no more than '2' distinct characters is "araa".<br><br>
+> The optimal approach is to use a sliding window<br>
+> Iterate in one pass<br>
+> While iterating, set each element seen so far into a hashmap<br>
+> If at any point, the size of the hashmap > k, then subtract the left window from the hashmap, if the value of the key is 0, delete the entry from the hashmap<br>
+> Advance the left window after subtracting a value from the hashmap<br>
+> Update the longest substring length<br>
+> Return the longest substring length<br><br>
+> O(n) time , O(n) space
