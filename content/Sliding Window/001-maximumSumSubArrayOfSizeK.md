@@ -1,5 +1,5 @@
 ---
-title: Maximum Sum Subarray of Size K
+title: Maximum Sum Subarray of Size K (easy)
 ---
 
 > [!example]

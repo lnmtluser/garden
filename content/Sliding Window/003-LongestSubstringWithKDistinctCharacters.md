@@ -1,5 +1,5 @@
 ---
-title: Longest Substring With K Distinct Characters
+title: Longest Substring With K Distinct Characters (medium)
 ---
 
 > [!example]

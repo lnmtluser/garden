@@ -1,5 +1,5 @@
 ---
-title: Smallest Subarray with a given sum
+title: Smallest Subarray with a given sum (easy)
 ---
 
 > [!example]
